@@ -39,7 +39,7 @@ require "views/templates/nav.php";
             </select>
             <br><br>
             
-            <button type="submit">create plan</button>
+            <button type="submit">Plan erstellen</button>
         </form>
     </div>
 </div>

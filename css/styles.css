@@ -22,7 +22,7 @@ nav {
     background-color: rgb(71, 71, 71);
     position: relative;
     z-index: 10;
-    font-family: "Sora", sans-serif;
+    font-family: "Sora", sans-serif; 
 }
 
 nav ul {
@@ -55,4 +55,3 @@ nav a:hover {
     transform: scale(1.4);
     transition: color 0.3s ease, transform 0.3s ease;
 }
-

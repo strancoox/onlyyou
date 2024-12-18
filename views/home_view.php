@@ -1,6 +1,7 @@
 <h1>Home</h1>
 <?php
 require "views/templates/nav.php";
+require "models/home_model.php";
 ?>
 <div class="home-layout">
     <div>

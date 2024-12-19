@@ -14,15 +14,15 @@ require "models/home_model.php";
         <div class="data-box">
             <form action="" method="post">
                 <label for="age"></label>
-                <input type="number" id="age" name="age" min="0" max="100" placeholder="Alter...(min. 16)">
+                <input type="number" id="age" name="age" min="0" max="100" placeholder="Alter...(min. 16)" required>
                 <br><br>
 
                 <label for="weight"></label>
-                <input type="number" id="weight" name="weight" step="0.1" min="0" max="300" placeholder="Gewicht in KG...">
+                <input type="number" id="weight" name="weight" step="0.1" min="0" max="300" placeholder="Gewicht in KG..." required>
                 <br><br>
 
                 <label for="trainingsgoal1"></label>
-                <input type="radio" id="circle1" name="circle" value="1" checked>
+                <input type="radio" id="circle1" name="circle" value="1" checked required>
                 <span class="circle-label">Abnehmen</span>
                 <br>
 
@@ -37,7 +37,7 @@ require "models/home_model.php";
                 <br><br>
 
                 <label for="trainingcount"></label>
-                <select id="trainingcount" name="trainingcount">
+                <select id="trainingcount" name="trainingcount" required>
                     <option value="" disabled selected>Anzahl Trainingstage</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -50,6 +50,15 @@ require "models/home_model.php";
                     <button type="submit">Plan erstellen</button>
                 </div>
             </form>
+            <?php if($errors) { ?>
+            <div class="error-container">
+                <ul>
+                    <?php foreach($errors as $error) { ?>
+                    <li><?php echo $error ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <?php } ?>
         </div>
     </div>
 </div>

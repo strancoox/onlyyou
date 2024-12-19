@@ -50,7 +50,7 @@ require "models/home_model.php";
                     <button type="submit">Plan erstellen</button>
                 </div>
             </form>
-            <?php if($errors) { ?>
+            <?php if(!empty($errors)) { ?>
             <div class="error-container">
                 <ul>
                     <?php foreach($errors as $error) { ?>

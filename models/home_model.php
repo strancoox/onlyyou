@@ -1,7 +1,10 @@
 <?php 
+
 $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    // Eingabe
     if (isset($_POST['age'])) {
         $age = trim($_POST['age']) ?? '';
     }
@@ -14,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['trainingcount'])) {
         $days = trim($_POST['trainingcount']) ?? '';
     }
-    
+    // Fehlerüberprüfung
     if ($age === '' || !is_numeric($age) || $age < 16 || $age > 100) {
         $errors[] = 'Bitte gib ein gültiges Alter an.';
     }
@@ -26,6 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     if ($days === '' || !is_numeric($days) || $days < 2 || $days > 6) {
         $errors[] = 'Bitte wähle eine gültige Anzahl von Trainingstagen.';
+    }
+
+    if (empty($errors)) {
+
+        header("Location: models/workout_model.php?age=$age&weight=$weight&goal=$goal&days=$days");
+        exit();
     }
 }
     

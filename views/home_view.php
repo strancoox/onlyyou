@@ -46,11 +46,7 @@ require "models/home_model.php";
                     <option value="6">6</option>
                 </select>
                 <br><br>
-                <div class="button-container">
-                    <button type="submit">Plan erstellen</button>
-                </div>
-            </form>
-            <?php if(!empty($errors)) { ?>
+                <?php if(!empty($errors)) { ?>
             <div class="error-container">
                 <ul>
                     <?php foreach($errors as $error) { ?>
@@ -59,6 +55,13 @@ require "models/home_model.php";
                 </ul>
             </div>
             <?php } ?>
+                <div class="button-container">
+                    <button type="submit">Plan erstellen</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+<?php
+require "views/templates/footer.php";
+?>

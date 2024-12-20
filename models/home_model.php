@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($errors)) {
 
-        header("Location: onlyyou/workout");
+        header("Location: workout");
         exit();
     }
 }

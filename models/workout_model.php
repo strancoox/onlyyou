@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
         require 'core/plans.php';
         $plan = createTrainingplan($age, $weight, $goal, $days);
+        return $plan;
     }
         
 }

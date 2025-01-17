@@ -12,7 +12,7 @@ require "models/home_model.php";
     </div>
     <div class="data-container">
         <div class="data-box">
-            <form action="" method="post">
+            <form action="workout" method="post">
                 <label for="age"></label>
                 <input type="number" id="age" name="age" min="0" max="100" placeholder="Alter...(min. 16)" required>
                 <br><br>

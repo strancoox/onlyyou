@@ -208,3 +208,56 @@ img.right-picture {
 }
 
 /* Workout */
+.workout-layout {
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Platz zwischen den Boxen */
+    align-items: center;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%; /* Breite der Plan-Box */
+    height: 100%; 
+    margin: 15px 0; /* Oben und unten etwas Abstand */
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    justify-content: flex-start; /* Inhalte links oben beginnen */
+}
+
+.plan-box {
+    background-color: rgb(109, 109, 109);
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 88%;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%; /* Gleiche Breite wie die Plan-Box */
+    height: 100%;
+    margin: 15px 0; /* Oben und unten etwas Abstand */
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    justify-content: flex-start; 
+}
+
+.tips-box {
+    background-color: rgb(109, 109, 109);
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 88%;
+}

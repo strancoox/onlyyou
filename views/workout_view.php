@@ -3,24 +3,19 @@
 require "views/templates/nav.php";
 require "models/workout_model.php";
 
-if ($plan === null) 
-{
-    
-} 
-else 
-{
-
+if ($plan === null) {
+} else {
 }
 ?>
 <div class="workout-layout">
     <div class="plan-container">
         <div class="plan-box">
-            <h2>Dein Plan:</h2> 
+            <h2>Dein Plan:</h2>
             <?php if ($plan !== null): ?>
-                <ul>
-                    <?php foreach($plan as $key => $personalplan): ?>
+                <ul class="workoutplan">
+                    <?php foreach ($plan as $key => $personalplan): ?>
                         <li>
-                            <?=  $key . ': ' .  $personalplan[0]["dauer"] . ' ' . $personalplan[0]["Übung"]?>
+                            <?= $key . ': ' .  $personalplan[0]["dauer"] . ' ' . $personalplan[0]["Übung"] ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -30,9 +25,9 @@ else
     <div class="tips-container">
         <div class="tips-box">
             <h2>Tipps:</h2>
-            <ul>
+            <ul class="tips">
                 <li>
-
+                    
                 </li>
             </ul>
         </div>

@@ -1,5 +1,6 @@
 <?php 
 $errors = [];
+$plan = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

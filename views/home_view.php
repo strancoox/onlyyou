@@ -1,7 +1,7 @@
 <h1>Home</h1>
 <?php
 require "views/templates/nav.php";
-require "models/home_model.php";
+require "models/workout_model.php";
 ?>
 <div class="home-layout">
     <div>
@@ -46,15 +46,6 @@ require "models/home_model.php";
                     <option value="6">6</option>
                 </select>
                 <br><br>
-                <?php if(!empty($errors)) { ?>
-            <div class="error-container">
-                <ul>
-                    <?php foreach($errors as $error) { ?>
-                    <li><?php echo $error ?></li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <?php } ?>
                 <div class="button-container">
                     <button class="create-button" type="submit">Plan erstellen</button>
                 </div>

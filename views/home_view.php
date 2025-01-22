@@ -56,7 +56,7 @@ require "models/home_model.php";
             </div>
             <?php } ?>
                 <div class="button-container">
-                    <button type="submit">Plan erstellen</button>
+                    <button class="create-button" type="submit">Plan erstellen</button>
                 </div>
             </form>
         </div>

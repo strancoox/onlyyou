@@ -16,5 +16,3 @@
         ?>
     </body>
 </html>
-
-// create a login button which will be visible on all my views

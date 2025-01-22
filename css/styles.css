@@ -244,6 +244,10 @@ img.right-picture {
     width: 100%;
     max-width: 90%;
     height: 86%;
+    display: flex; 
+    flex-wrap: wrap; 
+    align-content: flex-start; 
+    position: relative;
 }
 
 .tips-container {
@@ -268,13 +272,38 @@ img.right-picture {
     height: 86%;
 }
 
-.workoutplan li {
-    margin-bottom: 20px;
+.workoutplan {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
     color: white;
+    width: 100%; 
+}
 
+.workoutplan li {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 5px;
+}
+
+.workoutplan p {
+    margin: 5px;
 }
 
 .tips {
     color: white;
     font-family: "Sora", sans-serif;
+}
+
+.plan-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; 
+    width: 2px;
+    background-color: white;
+    transform: translateX(-50%);
 }

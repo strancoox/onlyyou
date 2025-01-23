@@ -20,7 +20,7 @@ require "models/register_model.php";
                 <br><br>
 
                 <label for="Passwort"></label>
-                <input type="text" name="passwort" id="passwort" placeholder="Passwort..." required>
+                <input type="password" name="passwort" id="passwort" placeholder="Passwort..." required>
                 <br><br>
 
                 <div class="form-footer">

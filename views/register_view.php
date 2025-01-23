@@ -1,25 +1,26 @@
 <h1>Registrieren</h1>
 <?php
 require "views/templates/nav.php";
+require "models/register_model.php";
 ?>
 <div class="register-layout">
     <div class="register-container">
         <div class="register-box">
             <form action="" method="post">
                 <label for="Vorname"></label>
-                <input type="text" name="vorname" placeholder="Vorname..." required>
+                <input type="text" name="vorname" id="vorname" placeholder="Vorname..." required>
                 <br><br>
 
                 <label for="Nachname"></label>
-                <input type="text" name="nachname" placeholder="Nachname..." required>
+                <input type="text" name="nachname" id="nachname" placeholder="Nachname..." required>
                 <br><br>
 
                 <label for="Email"></label>
-                <input type="text" name="email" placeholder="Email..." required>
+                <input type="text" name="email" id="email" placeholder="Email..." required>
                 <br><br>
 
                 <label for="Passwort"></label>
-                <input type="text" name="password" placeholder="Passwort..." required>
+                <input type="text" name="passwort" id="passwort" placeholder="Passwort..." required>
                 <br><br>
 
                 <div class="form-footer">

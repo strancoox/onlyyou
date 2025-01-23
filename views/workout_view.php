@@ -2,10 +2,6 @@
 <?php
 require "views/templates/nav.php";
 require "models/workout_model.php";
-
-if ($plan === null) {
-} else {
-}
 ?>
 <div class="workout-layout">
     <div class="plan-container">
@@ -17,6 +13,7 @@ if ($plan === null) {
                     <?php foreach($errors as $error) { ?>
                     <li><?php echo $error ?></li>
                     <?php } ?>
+                    <p>Kehre <a href="home" class="correctdata-link">hier</a>&nbsp;zurück.</p>
                 </ul>
             </div>
             <?php } ?>

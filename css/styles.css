@@ -276,6 +276,12 @@ img.right-picture {
     width: 500px;
 }
 
+.correctdata-link {
+    color: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .tips-container {
     display: flex;
     flex-direction: column;

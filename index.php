@@ -12,7 +12,9 @@
     </head>
     <body>
         <?php 
+            require "core/authentication.php";
             require "routes.php"; 
         ?>
+        
     </body>
 </html>

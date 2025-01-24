@@ -23,15 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $db->prepare("SELECT Passwort FROM onlyyou_login WHERE Email = :email");
         $stmt->execute([':email' => $email]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        
-        if (!$user) {
-            echo "Benutzer nicht gefunden.";
-        } else {
-            if (password_verify(trim($password), $user['Passwort'])) {
-                echo "Login erfolgreich!";
-            } else {
-                echo "Falsche E-Mail oder falsches Passwort<br>";
-            }
-        }  
+
+        login($email);
+
+        header('Location: home');
     }
 }
